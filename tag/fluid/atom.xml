@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>http://example.com</id>
+    <title>Archimage的博客 • Posts by &#34;fluid&#34; tag</title>
+    <link href="http://example.com" />
+    <updated>2023-07-11T15:05:51.000Z</updated>
+    <category term="hexo" />
+    <category term="fluid" />
+    <entry>
+        <id>http://example.com/2023/07/11/my-blog-build-remark/</id>
+        <title>基于 GitHub Pages + Hexo 搭建个人博客</title>
+        <link rel="alternate" href="http://example.com/2023/07/11/my-blog-build-remark/"/>
+        <content type="html">&lt;img data-src=&#34;/2023/07/11/my-blog-build-remark/test-image.png&#34; class=&#34;&#34; title=&#34;目录结构&#34;&gt;
+&lt;p&gt;&lt;img data-src=&#34;./my-blog-build-remark/test-image.png&#34; alt=&#34;图片标题&#34;&gt;&lt;/p&gt;
+</content>
+        <category term="hexo" />
+        <category term="fluid" />
+        <updated>2023-07-11T15:05:51.000Z</updated>
+    </entry>
+</feed>
