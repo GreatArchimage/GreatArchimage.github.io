@@ -5,19 +5,98 @@
         <link>http://example.com</link>
         <description></description>
         <language>zh-CN</language>
-        <pubDate>Tue, 11 Jul 2023 23:05:51 +0800</pubDate>
-        <lastBuildDate>Tue, 11 Jul 2023 23:05:51 +0800</lastBuildDate>
-        <category>hexo</category>
-        <category>fluid</category>
+        <pubDate>Thu, 13 Jul 2023 19:33:45 +0800</pubDate>
+        <lastBuildDate>Thu, 13 Jul 2023 19:33:45 +0800</lastBuildDate>
+        <category>Github</category>
+        <category>PicGo</category>
+        <category>Hexo</category>
+        <category>GitHub Pages</category>
+        <item>
+            <guid isPermalink="true">http://example.com/2023/07/13/hexo-guide/</guid>
+            <title>Hexo 的基本使用</title>
+            <link>http://example.com/2023/07/13/hexo-guide/</link>
+            <category>Hexo</category>
+            <pubDate>Thu, 13 Jul 2023 19:33:45 +0800</pubDate>
+            <description><![CDATA[ &lt;h2 id=&#34;hexo-的基本使用&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#hexo-的基本使用&#34;&gt;#&lt;/a&gt; Hexo 的基本使用&lt;/h2&gt;
+&lt;h3 id=&#34;创建文章&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#创建文章&#34;&gt;#&lt;/a&gt; 创建文章&lt;/h3&gt;
+&lt;p&gt;修改 &lt;code&gt;_config.yml文件&lt;/code&gt; ，生成文章的同时，生成一个同名的资源目录，这样在引用图片时，可以使用相对路径引用。&lt;/p&gt;
+&lt;figure class=&#34;highlight plaintext&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;post_asset_folder: true&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;创建一个名为 &lt;code&gt;hexo-guide&lt;/code&gt;  的文章&lt;/p&gt;
+&lt;figure class=&#34;highlight plaintext&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;hexo new post hexo-guide&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;Front-matter 是文件最上方以  &lt;code&gt;---&lt;/code&gt;  分隔的区域，用于指定个别文件的变量，举例来说：&lt;/p&gt;
+&lt;figure class=&#34;highlight plaintext&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;---&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;title: Hello World&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;date: 2013/7/13 20:46:25&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;tag: [&amp;#x27;test&amp;#x27;] # 文章标签&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;---&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;文章的 Markdown 文件里，通过以下方式即可引用对应的图片。&lt;/p&gt;
+&lt;figure class=&#34;highlight text&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&amp;#123;% [路径] [图片题注] %&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;h3 id=&#34;创建关于页&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#创建关于页&#34;&gt;#&lt;/a&gt; 创建「关于页」&lt;/h3&gt;
+&lt;p&gt;使用以下命令创建一个关于页面&lt;/p&gt;
+&lt;figure class=&#34;highlight plaintext&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;hexo new page about&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;创建成功后修改  &lt;code&gt;/source/about/index.md&lt;/code&gt; ，添加 layout 属性。修改后的文件示例如下：&lt;/p&gt;
+&lt;figure class=&#34;highlight sql&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;---title: 标题layout: about---这里写关于页的正文，支持 Markdown, HTML&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+ ]]></description>
+        </item>
         <item>
             <guid isPermalink="true">http://example.com/2023/07/11/my-blog-build-remark/</guid>
             <title>基于 GitHub Pages + Hexo 搭建个人博客</title>
             <link>http://example.com/2023/07/11/my-blog-build-remark/</link>
-            <category>hexo</category>
-            <category>fluid</category>
+            <category>Hexo</category>
+            <category>GitHub Pages</category>
             <pubDate>Tue, 11 Jul 2023 23:05:51 +0800</pubDate>
-            <description><![CDATA[ &lt;img data-src=&#34;/2023/07/11/my-blog-build-remark/test-image.png&#34; class=&#34;&#34; title=&#34;目录结构&#34;&gt;
-&lt;p&gt;&lt;img data-src=&#34;./my-blog-build-remark/test-image.png&#34; alt=&#34;图片标题&#34;&gt;&lt;/p&gt;
+            <description><![CDATA[ &lt;h2 id=&#34;基于hexogithubpages搭建个人博客&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#基于hexogithubpages搭建个人博客&#34;&gt;#&lt;/a&gt; 基于 Hexo+GitHubPages 搭建个人博客&lt;/h2&gt;
+&lt;p&gt;参考教程：&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly94aWUuaW5mb3EuY24vYXJ0aWNsZS9hYzUxY2UxZjZlOTQzNDc3OWMzNWNiYjZj&#34;&gt;白嫖 GitHub Pages，轻松搭建个人博客_Hexo_LigaAI_InfoQ 写作社区&lt;/span&gt;&lt;/p&gt;
+&lt;h3 id=&#34;github-pages-是什么&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#github-pages-是什么&#34;&gt;#&lt;/a&gt; GitHub Pages 是什么？&lt;/h3&gt;
+&lt;p&gt;GitHub Pages 是由 GitHub 官方提供的一种免费的静态站点托管服务，让我们可以在 GitHub 仓库里托管和发布自己的静态网站页面。&lt;/p&gt;
+&lt;h3 id=&#34;hexo-是什么&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#hexo-是什么&#34;&gt;#&lt;/a&gt; Hexo 是什么？&lt;/h3&gt;
+&lt;p&gt;Hexo 是一个快速、简洁且高效的静态博客框架，它基于 Node.js 运行，可以将我们撰写的 Markdown 文档解析渲染成静态的 HTML 网页。&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9oZXhvLmlvL3poLWNuL2RvY3Mv&#34;&gt;文档 | Hexo&lt;/span&gt;&lt;/p&gt;
+&lt;h3 id=&#34;原理&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#原理&#34;&gt;#&lt;/a&gt; 原理&lt;/h3&gt;
+&lt;p&gt;在本地撰写 Markdown 格式文章后，通过 Hexo 解析文档，渲染生成具有主题样式的 HTML 静态网页，再推送到 GitHub 上完成博文的发布。&lt;/p&gt;
+&lt;h3 id=&#34;步骤&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#步骤&#34;&gt;#&lt;/a&gt; 步骤&lt;/h3&gt;
+&lt;p&gt;开始前需确认已安装 Git 和 NodeJS，且能使用 npm 工具。&lt;/p&gt;
+&lt;h4 id=&#34;配置github-pages&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#配置github-pages&#34;&gt;#&lt;/a&gt; 配置 GitHub Pages&lt;/h4&gt;
+&lt;ol&gt;
+&lt;li&gt;在 Github 上创建仓库，仓库名必须使用  &lt;code&gt;&amp;lt;GitHub用户名&amp;gt;.github.io&lt;/code&gt;  格式。&lt;/li&gt;
+&lt;li&gt;在仓库创建一个名为 &lt;code&gt;index.html&lt;/code&gt;  的文件。&lt;/li&gt;
+&lt;li&gt;访问 &lt;code&gt;https://&amp;lt;GitHub 用户名&amp;gt;.github.io&lt;/code&gt; ，如果能访问成功，即代表 GitHub Pages 搭建成功。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h4 id=&#34;安装hexo&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#安装hexo&#34;&gt;#&lt;/a&gt; 安装 Hexo&lt;/h4&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;全局安装 &lt;code&gt;hexo-cli&lt;/code&gt;&lt;/p&gt;
+&lt;figure class=&#34;highlight shell&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;npm install -g hexo-cli&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;创建并初始化 hexo 项目&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+   &lt;figure class=&#34;highlight shell&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;hexo init my-blog&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;cd my-blog&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;npm install&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;ol start=&#34;3&#34;&gt;
+&lt;li&gt;
+&lt;p&gt;生成页面 &amp;amp; 本地启动&lt;/p&gt;
+&lt;figure class=&#34;highlight plaintext&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;hexo g &amp;amp; hexo s&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;本地访问&lt;/p&gt;
+&lt;p&gt;浏览器访问：&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cDovL2xvY2FsaG9zdDo0MDAwLw==&#34;&gt;http://localhost:4000/&lt;/span&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h4 id=&#34;配置主题&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#配置主题&#34;&gt;#&lt;/a&gt; 配置主题&lt;/h4&gt;
+&lt;p&gt;Hexo 主题：&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9oZXhvLmlvL3RoZW1lcy8=&#34;&gt;Themes | Hexo&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;通常主题的 Github 仓库有文档介绍如何配置主题。&lt;/p&gt;
+&lt;h4 id=&#34;发布github-pages&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#发布github-pages&#34;&gt;#&lt;/a&gt; 发布 GitHub Pages&lt;/h4&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;安装 &lt;code&gt;hexo-deployer-git&lt;/code&gt;&lt;/p&gt;
+&lt;figure class=&#34;highlight plaintext&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;npm install hexo-deployer-git --save&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;修改 &lt;code&gt;config.yml&lt;/code&gt; ，将以下信息替换&lt;/p&gt;
+&lt;figure class=&#34;highlight plaintext&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;deploy:&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  type: git&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  repo: &amp;lt;repository url&amp;gt; # https://github.com/&amp;lt;GitHub用户名&amp;gt;/&amp;lt;GitHub用户名&amp;gt;.github.io.git&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  branch: [branch] #分支名称&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  token: [token]&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;生成页面并推送至 Github 仓库&lt;/p&gt;
+&lt;figure class=&#34;highlight plaintext&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;hexo clean &amp;amp; hexo d&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
  ]]></description>
         </item>
     </channel>

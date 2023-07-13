@@ -1,36 +1,13 @@
 <?xml version="1.0"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>http://example.com</id>
-    <title>Archimage的博客 • Posts by &#34;hexo&#34; tag</title>
+    <title>Archimage的博客 • Posts by &#34;github pages&#34; tag</title>
     <link href="http://example.com" />
-    <updated>2023-07-13T11:33:45.000Z</updated>
+    <updated>2023-07-11T15:05:51.000Z</updated>
     <category term="Github" />
     <category term="PicGo" />
     <category term="Hexo" />
     <category term="GitHub Pages" />
-    <entry>
-        <id>http://example.com/2023/07/13/hexo-guide/</id>
-        <title>Hexo 的基本使用</title>
-        <link rel="alternate" href="http://example.com/2023/07/13/hexo-guide/"/>
-        <content type="html">&lt;h2 id=&#34;hexo-的基本使用&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#hexo-的基本使用&#34;&gt;#&lt;/a&gt; Hexo 的基本使用&lt;/h2&gt;
-&lt;h3 id=&#34;创建文章&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#创建文章&#34;&gt;#&lt;/a&gt; 创建文章&lt;/h3&gt;
-&lt;p&gt;修改 &lt;code&gt;_config.yml文件&lt;/code&gt; ，生成文章的同时，生成一个同名的资源目录，这样在引用图片时，可以使用相对路径引用。&lt;/p&gt;
-&lt;figure class=&#34;highlight plaintext&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;post_asset_folder: true&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;p&gt;创建一个名为 &lt;code&gt;hexo-guide&lt;/code&gt;  的文章&lt;/p&gt;
-&lt;figure class=&#34;highlight plaintext&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;hexo new post hexo-guide&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;p&gt;Front-matter 是文件最上方以  &lt;code&gt;---&lt;/code&gt;  分隔的区域，用于指定个别文件的变量，举例来说：&lt;/p&gt;
-&lt;figure class=&#34;highlight plaintext&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;---&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;title: Hello World&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;date: 2013/7/13 20:46:25&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;tag: [&amp;#x27;test&amp;#x27;] # 文章标签&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;---&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;p&gt;文章的 Markdown 文件里，通过以下方式即可引用对应的图片。&lt;/p&gt;
-&lt;figure class=&#34;highlight text&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&amp;#123;% [路径] [图片题注] %&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;h3 id=&#34;创建关于页&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#创建关于页&#34;&gt;#&lt;/a&gt; 创建「关于页」&lt;/h3&gt;
-&lt;p&gt;使用以下命令创建一个关于页面&lt;/p&gt;
-&lt;figure class=&#34;highlight plaintext&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;hexo new page about&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;p&gt;创建成功后修改  &lt;code&gt;/source/about/index.md&lt;/code&gt; ，添加 layout 属性。修改后的文件示例如下：&lt;/p&gt;
-&lt;figure class=&#34;highlight sql&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;---title: 标题layout: about---这里写关于页的正文，支持 Markdown, HTML&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-</content>
-        <category term="Hexo" />
-        <updated>2023-07-13T11:33:45.000Z</updated>
-    </entry>
     <entry>
         <id>http://example.com/2023/07/11/my-blog-build-remark/</id>
         <title>基于 GitHub Pages + Hexo 搭建个人博客</title>
