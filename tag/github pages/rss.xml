@@ -7,10 +7,10 @@
         <language>zh-CN</language>
         <pubDate>Tue, 11 Jul 2023 23:05:51 +0800</pubDate>
         <lastBuildDate>Tue, 11 Jul 2023 23:05:51 +0800</lastBuildDate>
-        <category>Github</category>
-        <category>PicGo</category>
         <category>Hexo</category>
         <category>GitHub Pages</category>
+        <category>Github</category>
+        <category>PicGo</category>
         <item>
             <guid isPermalink="true">http://example.com/2023/07/11/my-blog-build-remark/</guid>
             <title>基于 GitHub Pages + Hexo 搭建个人博客</title>
