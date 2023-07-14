@@ -4,9 +4,9 @@
     <title>Archimage的博客</title>
     <link href="http://example.com" />
     <updated>2023-07-14T04:15:03.000Z</updated>
+    <category term="Hexo" />
     <category term="Github" />
     <category term="PicGo" />
-    <category term="Hexo" />
     <category term="Markdown" />
     <category term="GitHub Pages" />
     <entry>
@@ -81,8 +81,8 @@ return 0;
 &lt;p&gt;对应的 HTML 代码： &lt;code&gt;&amp;lt;a href=&amp;quot;https://markdown.com.cn&amp;quot; title=&amp;quot;最好的markdown教程&amp;quot;&amp;gt;Markdown语法&amp;lt;/a&amp;gt;&lt;/code&gt;&lt;/p&gt;
 &lt;h2 id=&#34;图片&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#图片&#34;&gt;#&lt;/a&gt; 图片&lt;/h2&gt;
 &lt;p&gt;要添加图像，请使用感叹号 ( &lt;code&gt;!&lt;/code&gt; ), 然后在方括号增加替代文本，图片链接放在圆括号里，括号里的链接后可以增加一个可选的图片标题文本。&lt;/p&gt;
-&lt;p&gt;插入图片 Markdown 语法代码：&lt;img data-src=&#34;%E5%9B%BE%E7%89%87%E9%93%BE%E6%8E%A5&#34; alt=&#34;图片alt&#34; title=&#34;图片title&#34;&gt;。&lt;/p&gt;
-&lt;p&gt;对应的 HTML 代码：&lt;img data-src=&#34;图片链接&#34; alt=&#34;图片alt&#34; title=&#34;图片title&#34;&gt;&lt;/p&gt;
+&lt;p&gt;插入图片 Markdown 语法代码： &lt;code&gt;![图片alt](图片链接 &amp;quot;图片title&amp;quot;)&lt;/code&gt; 。&lt;/p&gt;
+&lt;p&gt;对应的 HTML 代码： &lt;code&gt;&amp;lt;img src=&amp;quot;图片链接&amp;quot; alt=&amp;quot;图片alt&amp;quot; title=&amp;quot;图片title&amp;quot;&amp;gt;&lt;/code&gt;&lt;/p&gt;
 &lt;h2 id=&#34;转义字符&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#转义字符&#34;&gt;#&lt;/a&gt; 转义字符&lt;/h2&gt;
 &lt;p&gt;要显示原本用于格式化 `Markdown` 文档的字符，请在字符前面添加反斜杠字符 &lt;code&gt;\&lt;/code&gt;  。&lt;/p&gt;
 </content>
