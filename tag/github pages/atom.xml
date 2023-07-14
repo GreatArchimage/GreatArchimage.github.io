@@ -4,10 +4,11 @@
     <title>Archimage的博客 • Posts by &#34;github pages&#34; tag</title>
     <link href="http://example.com" />
     <updated>2023-07-11T15:05:51.000Z</updated>
-    <category term="Hexo" />
-    <category term="GitHub Pages" />
     <category term="Github" />
     <category term="PicGo" />
+    <category term="Hexo" />
+    <category term="Markdown" />
+    <category term="GitHub Pages" />
     <entry>
         <id>http://example.com/2023/07/11/my-blog-build-remark/</id>
         <title>基于 GitHub Pages + Hexo 搭建个人博客</title>

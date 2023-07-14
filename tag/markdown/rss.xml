@@ -1,0 +1,96 @@
+<?xml version="1.0"?>
+<rss version="2.0">
+    <channel>
+        <title>Archimage的博客 • Posts by &#34;markdown&#34; tag</title>
+        <link>http://example.com</link>
+        <description></description>
+        <language>zh-CN</language>
+        <pubDate>Fri, 14 Jul 2023 12:15:03 +0800</pubDate>
+        <lastBuildDate>Fri, 14 Jul 2023 12:15:03 +0800</lastBuildDate>
+        <category>Github</category>
+        <category>PicGo</category>
+        <category>Hexo</category>
+        <category>Markdown</category>
+        <category>GitHub Pages</category>
+        <item>
+            <guid isPermalink="true">http://example.com/2023/07/14/markdown-grammar/</guid>
+            <title>markdown 语法</title>
+            <link>http://example.com/2023/07/14/markdown-grammar/</link>
+            <category>Markdown</category>
+            <pubDate>Fri, 14 Jul 2023 12:15:03 +0800</pubDate>
+            <description><![CDATA[ &lt;h1 id=&#34;markdown-基本语法&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#markdown-基本语法&#34;&gt;#&lt;/a&gt; Markdown 基本语法&lt;/h1&gt;
+&lt;p&gt;Markdown 是一种轻量级标记语言，排版语法简洁，让人们更多地关注内容本身而非排版。它使用易读易写的纯文本格式编写文档，可与 HTML 混编，可导出 HTML、PDF 以及本身的 .md 格式的文件。因简洁、高效、易读、易写，Markdown 被大量使用，如 Github、Wikipedia、简书等。&lt;/p&gt;
+&lt;h2 id=&#34;标题&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#标题&#34;&gt;#&lt;/a&gt; 标题&lt;/h2&gt;
+&lt;p&gt;在单词或短语前面使用 &lt;code&gt;#&lt;/code&gt; 创建标题， &lt;code&gt;#&lt;/code&gt;  的数量代表了标题的级别。&lt;/p&gt;
+&lt;figure class=&#34;highlight plaintext&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;# 一级标题&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;## 二级标题&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;h2 id=&#34;段落&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#段落&#34;&gt;#&lt;/a&gt; 段落&lt;/h2&gt;
+&lt;p&gt;使用空白行分隔段落。&lt;/p&gt;
+&lt;h2 id=&#34;换行&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#换行&#34;&gt;#&lt;/a&gt; 换行&lt;/h2&gt;
+&lt;p&gt;在一行的末尾添加两个或多个空格，然后按回车键，即可创建一个换行 ( &lt;code&gt;&amp;lt;br&amp;gt;&lt;/code&gt; )。&lt;/p&gt;
+&lt;h2 id=&#34;强调&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#强调&#34;&gt;#&lt;/a&gt; 强调&lt;/h2&gt;
+&lt;h3 id=&#34;粗体&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#粗体&#34;&gt;#&lt;/a&gt; 粗体&lt;/h3&gt;
+&lt;p&gt;在单词或短语的前后各添加&lt;strong&gt;两个&lt;/strong&gt;星号或下划线加粗文本。&lt;/p&gt;
+&lt;h3 id=&#34;斜体&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#斜体&#34;&gt;#&lt;/a&gt; 斜体&lt;/h3&gt;
+&lt;p&gt;在单词或短语的前后各添加&lt;em&gt;一个&lt;/em&gt;星号或下划线将文本以斜体显示。&lt;/p&gt;
+&lt;h3 id=&#34;粗体和斜体&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#粗体和斜体&#34;&gt;#&lt;/a&gt; 粗体和斜体&lt;/h3&gt;
+&lt;p&gt;在单词或短语的前后各添加&lt;em&gt;&lt;strong&gt;三个&lt;/strong&gt;&lt;/em&gt;星号或下划线加粗文本。&lt;/p&gt;
+&lt;h2 id=&#34;引用&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#引用&#34;&gt;#&lt;/a&gt; 引用&lt;/h2&gt;
+&lt;p&gt;使用 &lt;code&gt;&amp;gt;&lt;/code&gt;  创建块引用。&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;这是块引用&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;块引用可嵌套&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;这是块引用&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;嵌套块引用&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;列表&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#列表&#34;&gt;#&lt;/a&gt; 列表&lt;/h2&gt;
+&lt;h3 id=&#34;有序列表&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#有序列表&#34;&gt;#&lt;/a&gt; 有序列表&lt;/h3&gt;
+&lt;p&gt;要创建有序列表，请在每个列表项前添加数字并紧跟一个英文句点。缩进一个或多个列表项可创建嵌套列表。&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;第一项&lt;/li&gt;
+&lt;li&gt;第二项
+&lt;ol&gt;
+&lt;li&gt;嵌套列表项&lt;/li&gt;
+&lt;li&gt;嵌套列表项&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;第三项&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;无序列表&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#无序列表&#34;&gt;#&lt;/a&gt; 无序列表&lt;/h3&gt;
+&lt;p&gt;要创建无序列表，请在每个列表项前面添加破折号 (-)、星号 (*) 或加号 (+) 。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;列表项一&lt;/li&gt;
+&lt;li&gt;列表项二&lt;/li&gt;
+&lt;li&gt;列表项三&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;代码&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#代码&#34;&gt;#&lt;/a&gt; 代码&lt;/h2&gt;
+&lt;p&gt;使用反引号包裹可将单词或短语表示为 &lt;code&gt;代码&lt;/code&gt; 。&lt;/p&gt;
+&lt;p&gt;要创建代码块，请将代码块的每一行缩进至少四个空格或一个制表符。&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;#include &amp;lt;stdio.h&amp;gt;
+int main()
+&amp;#123;
+printf(&amp;quot;Hello, World!&amp;quot;);
+return 0;
+&amp;#125;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&#34;分割线&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#分割线&#34;&gt;#&lt;/a&gt; 分割线&lt;/h2&gt;
+&lt;hr&gt;
+&lt;p&gt;要创建分隔线，请在单独一行上使用三个或多个星号 ( &lt;code&gt;***&lt;/code&gt; )、破折号 ( &lt;code&gt;---&lt;/code&gt; ) 或下划线 ( &lt;code&gt;___&lt;/code&gt; ) ，并且不能包含其他内容。&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;链接&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#链接&#34;&gt;#&lt;/a&gt; 链接&lt;/h2&gt;
+&lt;p&gt;链接文本放在中括号内，链接地址放在后面的括号中，链接 title 可选。&lt;/p&gt;
+&lt;p&gt;这是一个链接 &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9tYXJrZG93bi5jb20uY24=&#34;&gt;Markdown 语法&lt;/span&gt;。&lt;/p&gt;
+&lt;p&gt;对应的 HTML 代码： &lt;code&gt;&amp;lt;a href=&amp;quot;https://markdown.com.cn&amp;quot; title=&amp;quot;最好的markdown教程&amp;quot;&amp;gt;Markdown语法&amp;lt;/a&amp;gt;&lt;/code&gt;&lt;/p&gt;
+&lt;h2 id=&#34;图片&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#图片&#34;&gt;#&lt;/a&gt; 图片&lt;/h2&gt;
+&lt;p&gt;要添加图像，请使用感叹号 ( &lt;code&gt;!&lt;/code&gt; ), 然后在方括号增加替代文本，图片链接放在圆括号里，括号里的链接后可以增加一个可选的图片标题文本。&lt;/p&gt;
+&lt;p&gt;插入图片 Markdown 语法代码：&lt;img data-src=&#34;%E5%9B%BE%E7%89%87%E9%93%BE%E6%8E%A5&#34; alt=&#34;图片alt&#34; title=&#34;图片title&#34;&gt;。&lt;/p&gt;
+&lt;p&gt;对应的 HTML 代码：&lt;img data-src=&#34;图片链接&#34; alt=&#34;图片alt&#34; title=&#34;图片title&#34;&gt;&lt;/p&gt;
+&lt;h2 id=&#34;转义字符&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#转义字符&#34;&gt;#&lt;/a&gt; 转义字符&lt;/h2&gt;
+&lt;p&gt;要显示原本用于格式化 `Markdown` 文档的字符，请在字符前面添加反斜杠字符 &lt;code&gt;\&lt;/code&gt;  。&lt;/p&gt;
+ ]]></description>
+        </item>
+    </channel>
+</rss>
